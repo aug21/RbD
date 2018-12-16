@@ -39,8 +39,8 @@
 				top:50,
 				opacity:0,
 			}, 500);
-			$("article").hide();
-			$("#" + activeTab).delay(500).show().animate({
+			$("article").slideUp();
+			$("#" + activeTab).delay(500).slideDown().animate({
 				top:0,
 				opacity:1,
 			}, 1000);
