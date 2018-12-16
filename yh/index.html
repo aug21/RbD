@@ -31,12 +31,15 @@
 	})
 	$(function () {
 		$("menu li").click(function () {
+			$("ul.tabs li").animate({
+				opacity:0.5,
+			}, 1000);
 			$(this).animate({
 				opacity:1,
 			}, 1000);
 			$(".tc").animate({
-				left: '-100',
-				opacity:0,
+				top: '0',
+				opacity:1,
 			}, 1000);
 			$(".tc").hide();
 			var activeTab = $(this).attr("rel");
