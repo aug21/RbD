@@ -25,13 +25,10 @@
 			top: '0',
 			opacity:1,
 		}, 1000);
-		$('menu li:nth-child(1)').click(function() {
-			
-		});
 	})
 	$(function () {
 		$("menu li").click(function () {
-			$("ul.tabs li").animate({
+			$("menu li").animate({
 				opacity:0.5,
 			}, 1000);
 			$(this).animate({
@@ -43,7 +40,7 @@
 			}, 1000);
 			$(".tc").delay(1000).hide();
 			var activeTab = $(this).attr("rel");
-			$("#" + activeTab).show()
+			$("#" + activeTab).delay(1500).show()
 		});
 	});
 	</script>
