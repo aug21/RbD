@@ -58,6 +58,7 @@ p {
 	margin:0.5em 0;
 }
 menu {
+	margin-top:3em;
 	padding:0;
 	text-align:center;
 }
@@ -73,15 +74,24 @@ menu li.active {
 #wrap {
 	max-width:600px;
 	margin:100px auto;
-	padding:3em;
+	padding:3em 3em 1em 3em;
 	border:2em solid rgba(200,200,200,.3);
 	border-radius:2em;
+}
+@media (max-width: 600px) {
+  #wrap {
+		margin: 1em;
+		padding: 1em;
+		border: 1em solid rgba(200,200,200,.3);
+	}
 }
 #passport {
 	font-family: 'Roboto Condensed', 'Noto Sans KR', 'Spoqa Han Sans', 'malgun gothic', dotum;
 }
 #passport dl,
-#passport div { display:table-cell; font-size:13px; vertical-align:middle; }
+#passport div { display:inline-block; margin:0; font-size:13px; vertical-align:top; }
 #passport dl { padding:0 2em; }
 #passport dt { font-size:11px; line-height:1; }
 #passport dd { margin:0 0 0.5em 0; }
+
+#passport .star { float:right }
