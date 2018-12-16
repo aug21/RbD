@@ -26,9 +26,9 @@ body {
 }
 a	{ color:#999; text-decoration: none }
 
-::-webkit-scrollbar {width:7px}
-::-webkit-scrollbar-track			{ background: rgba(0,0,0,.1); border-radius:1em }
-::-webkit-scrollbar-thumb			{ background: rgba(200,200,200,.3); border-radius:1em }
+::-webkit-scrollbar		 {width:7px}
+::-webkit-scrollbar-track	{ background: rgba(0,0,0,.1); border-radius:1em }
+::-webkit-scrollbar-thumb	{ background: rgba(200,200,200,.3); border-radius:1em }
 
 		
 ::selection			{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
@@ -85,6 +85,7 @@ menu li.active {
 		padding: 1em;
 		border: 1em solid rgba(200,200,200,.3);
 	}
+	article { padding: 3em 1em 1em; }
 }
 #passport {
 	font-family: 'Roboto Condensed', 'Noto Sans KR', 'Spoqa Han Sans', 'malgun gothic', dotum;
