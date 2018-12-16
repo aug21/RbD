@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('//cdn.jsdelivr.net/font-iropke-batang/1.2/font-iropke-batang.css');
+@import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
+@font-face { 
+  font-family: 'Noto Sans KR'; 
+  font-style: normal; 
+  font-weight: 400; 
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'), 
+        url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype'); 
+ } 
+
+/* */
+body {
+	margin:0;
+	background-size:cover;
+	font-family:'Noto Sans KR', 'Spoqa Han Sans', 'malgun gothic', dotum;
+	font-size:15px;
+	line-height:2.2;
+	text-align:justify;
+}
+a	{ color:#999; text-decoration: none }
+
+::-webkit-scrollbar-track			{ background-color: #ceeaed; }
+::-webkit-scrollbar-thumb			{ background: #4dbec8; }
+
+::selection			{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
+::-moz-selection	{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
+::-webkit-selection	{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
+
+section:before {
+	content: "";
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: -1;
+	transform: scale(1.02);
+}
+section {
+	overflow: hidden;
+	position: relative;
+}
+article {
+	display:none;
+	max-width:600px;
+	margin:100px auto;
+	padding:0 2em;
+}
+p {
+	opacity:0;
+	position:relative;
+	top:50px;
+	margin:0.5em 0;
+}
+
+/* */
