@@ -60,3 +60,10 @@ p {
 }
 
 /* */
+#passport {
+	font-family: 'Roboto Condensed', 'Noto Sans KR', 'Spoqa Han Sans', 'malgun gothic', dotum;
+}
+#passport dl {
+}
+#passport dt { font-size:10px; }
+#passport dd { margin:0; font-size:12px; }
