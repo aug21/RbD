@@ -79,13 +79,14 @@ menu li.active {
 	opacity:1;
 }
 /* */
-@media (max-width: 600px) {
+@media (max-width: 560px) {
 	#wrap {
 		margin: 1em;
 		padding: 1em;
 		border: 1em solid rgba(200,200,200,.3);
 	}
 	article { padding: 3em 1em 1em; }
+	#passport { margin-right:0 }
 }
 #passport {
 	font-family: 'Roboto Condensed', 'Noto Sans KR', 'Spoqa Han Sans', 'malgun gothic', dotum;
