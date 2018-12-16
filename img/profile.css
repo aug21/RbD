@@ -86,7 +86,8 @@ menu li.active {
 		border: 1em solid rgba(200,200,200,.3);
 	}
 	article { padding: 3em 1em 1em; }
-	#passport { margin-right:0 }
+	.thumb	{ max-width:50% }
+	dl { max-width:50%; padding-right:0; box-sizing:border-box }
 }
 #passport {
 	font-family: 'Roboto Condensed', 'Noto Sans KR', 'Spoqa Han Sans', 'malgun gothic', dotum;
