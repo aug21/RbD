@@ -20,12 +20,25 @@
 				});
 			});
 		}
-		$('#passpport').show();
+		$('#passport').show();
 		$('#passport').delay(1000).animate({
 			top: '0',
 			opacity:1,
 		}, 1000);
+		$('menu li:nth-child(1)').click(function() {
+			
+		});
 	})
+	$(function () {
+		$("'menu li").click(function () {
+			$(this).animate({
+				opacity:1,
+			}, 1000);
+			$("article").hide()
+			var activeTab = $(this).attr("rel");
+			$("#" + activeTab).slideDown()
+		});
+	});
 	</script>
 	<style>
 	body {
@@ -92,11 +105,11 @@
 	</article>
 </section>
 <menu>
-	<li><img src="../img/home.png"></li>
-	<li><img src="../img/look.png"></li>
-	<li><img src="../img/char.png"></li>
-	<li><img src="../img/etc.png"></li>
-	<li><img src="../img/pair.png"></li>
+	<li rel="home"><a href="#"><img src="../img/home.png"></a></li>
+	<li rel="look"><a href="#"><img src="../img/look.png"></a></li>
+	<li rel="char"><a href="#"><img src="../img/char.png"></a></li>
+	<li rel="etc"><a href="#"><img src="../img/etc.png"></a></li>
+	<li rel="pair"><a href="#"><img src="../img/pair.png"></a></li>
 </menu>
 </div>
 </body>
