@@ -89,7 +89,7 @@ menu li.active {
 #passport dt { font-size:11px; line-height:1; }
 #passport dd { margin:0 0 0.5em 0; }
 
-#passport .star { float:right; line-height:1.4 }
+#passport .star { float:right; }
 
 @media (max-width: 560px) {
 	#wrap {
@@ -102,4 +102,5 @@ menu li.active {
 	#passport .thumb	{ max-width:calc(100% - 162px) }
 	#passport .thumb img { width:100% }
 	#passport dl { width:135px; padding-right:0; box-sizing:border-box }
+#passport .star { line-height:1.4 }
 }
