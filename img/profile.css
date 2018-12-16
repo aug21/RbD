@@ -93,11 +93,12 @@ menu li.active {
 
 @media (max-width: 560px) {
 	#wrap {
-		margin: 1em;
-		padding: 1em;
-		border: 1em solid rgba(200,200,200,.3);
+		height:calc(100% - 3em);
+		margin:1em;
+		padding:0.5em;
+		border:1em solid rgba(200,200,200,.3);
 	}
-	article { padding: 3em 1em 1em; }
+	article { padding:3em 1em 1em; }
 	#passport .thumb	{ max-width:50% }
 	#passport dl { max-width:50%; padding-right:0; box-sizing:border-box }
 }
