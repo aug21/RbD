@@ -49,9 +49,11 @@ section {
 article {
 	display:none;
 	opacity:0;
+	max-width:600px;
+}
+.tc {
 	position:relative;
 	top:50px;
-	max-width:600px;
 }
 p {
 	position:relative;
@@ -88,6 +90,7 @@ menu li.active {
 #passport {
 	font-family: 'Roboto Condensed', 'Noto Sans KR', 'Spoqa Han Sans', 'malgun gothic', dotum;
 }
+#passport h3 { letter-spacing:1px }
 #passport dl,
 #passport div { display:inline-block; margin:0; font-size:13px; vertical-align:top; }
 #passport dl { padding:0 2em; }
