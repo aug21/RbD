@@ -58,8 +58,12 @@ p {
 	margin:0.5em 0;
 }
 menu {
+	width:300px;
 	margin-top:3em;
 	padding:0;
+	position:absolute;
+	left:calc(50% - 150px);
+	bottom:0;
 	text-align:center;
 }
 menu li {
@@ -72,6 +76,7 @@ menu li.active {
 }
 /* */
 #wrap {
+	position:relative;
     max-width: 750px;
     margin: 0 auto;
     padding: 3em 3em 1em 3em;
