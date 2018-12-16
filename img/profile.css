@@ -45,7 +45,7 @@ a	{ color:#999; text-decoration: none }
 section {
 	position: relative;
 	overflow-y: auto;
-	height: calc(100% - 80px);
+	height: calc(100% - 100px);
 }
 article {
 	display:none;
