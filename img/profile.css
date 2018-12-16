@@ -48,7 +48,7 @@ section {
 }
 article {
 	display:none;
-	max-width:700px;
+	max-width:600px;
 	margin:100px auto;
 	padding:0 2em;
 }
@@ -64,7 +64,7 @@ p {
 	top:50px;
 	font-family: 'Roboto Condensed', 'Noto Sans KR', 'Spoqa Han Sans', 'malgun gothic', dotum;
 }
-#passport dl {
-}
-#passport dt { font-size:10px; }
-#passport dd { margin:0; font-size:12px; }
+#passport dl { display:table-cell; margin:0 }
+#passport dt { font-size:10px; line-height:1; }
+#passport dd { margin:0 0 0.5em 0; font-size:12px; }
+#passport p  { display:table-cell; font-size:12px; }
