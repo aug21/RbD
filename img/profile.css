@@ -25,9 +25,13 @@ body {
 }
 a	{ color:#999; text-decoration: none }
 
-::-webkit-scrollbar-track			{ background-color: #ceeaed; }
+::-webkit-scrollbar {width:8px}
+::-webkit-scrollbar-button:start:decrement,
+::-webkit-scrollbar-button:end:increment {height:10px;display:block;background:#000}
+::-webkit-scrollbar-track			{ background: #ceeaed; border-radius:1em }
 ::-webkit-scrollbar-thumb			{ background: #4dbec8; }
 
+		
 ::selection			{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
 ::-moz-selection	{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
 ::-webkit-selection	{ color:transparent; text-shadow: 0 0 2px #fff; transition: all 250ms ease-in; }
