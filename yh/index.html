@@ -30,17 +30,17 @@
 		$("menu li").click(function () {
 			$("menu li").animate({
 				opacity:0.5,
-			}, 1000);
+			}, 500);
 			$(this).animate({
 				opacity:1,
-			}, 1000);
+			}, 500);
 			$(".tc").animate({
-				top: '0',
+				top: '-50px',
 				opacity:1,
-			}, 1000);
-			$(".tc").delay(1000).hide();
+			}, 500);
+			$(".tc").delay(500).hide();
 			var activeTab = $(this).attr("rel");
-			$("#" + activeTab).delay(1500).show()
+			$("#" + activeTab).delay(1000).slideDown()
 		});
 	});
 	</script>
