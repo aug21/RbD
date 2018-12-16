@@ -77,7 +77,7 @@ menu li.active {
 }
 /* */
 @media (max-width: 600px) {
-  #wrap {
+	#wrap {
 		margin: 1em;
 		padding: 1em;
 		border: 1em solid rgba(200,200,200,.3);
