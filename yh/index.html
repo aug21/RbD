@@ -34,12 +34,8 @@
 			$(this).animate({
 				opacity:1,
 			}, 500);
-			$(".tc").animate({
-				top: '-50px',
-				opacity:0,
-			}, 500);
-			$(".tc").delay(500).hide();
 			var activeTab = $(this).attr("rel");
+			$(".tc").slideUp();
 			$("#" + activeTab).delay(1000).slideDown()
 		});
 	});
