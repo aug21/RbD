@@ -7,46 +7,6 @@
 	<link rel="stylesheet" href="../img/profile.css" />
 	<link rel="stylesheet" href="http://manos.malihu.gr/repository/custom-scrollbar/demo/jquery.mCustomScrollbar.css">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
-	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="http://manos.malihu.gr/repository/custom-scrollbar/demo/jquery.mCustomScrollbar.concat.min.js"></script>
-	<script>
-	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
-	$(document).ready(function(){
-		if(!isMobile) {
-			$(window).on("load",function(){
-				$("section").mCustomScrollbar({
-					theme:"minimal"
-				});
-			});
-		}
-		$('#passport').show();
-		$('#passport').delay(1000).animate({
-			top: '0',
-			opacity:1,
-		}, 1000);
-	})
-	$(function () {
-		$("menu li").click(function () {
-			$("menu li").animate({
-				opacity:0.5,
-			}, 500);
-			$(this).animate({
-				opacity:1,
-			}, 500);
-			var activeTab = $(this).attr("rel");
-			$("article").animate({
-				top:50,
-				opacity:0,
-			}, 500);
-			$("article").hide();
-			$("#" + activeTab).delay(500).show().animate({
-				top:0,
-				opacity:1,
-			}, 1000);
-		});
-	});
-	</script>
 	<style>
 	body {
 		background:url(bg.gif);
@@ -92,15 +52,16 @@
 		<p><span>　아무리 바빠도 겉보기엔 여유로워 보인다. 이는 뭐든 해낼 수 있다는 자신감 때문이다. 자신감과 자존감 모두 적당히 있는 편. 필요하다면 얼굴에 철판도 잘 깐다.</span></p>
 	</article>
 	<article id="etc" class="tc">
+		<h4>Sentinel</h4>
 		<p><span>　센티넬으로의 각성이 굉장히 늦게 된 케이스. 고등학생 때 센티넬일 확률이 높다고 판정을 받아 관련하여 교육을 받았지만, 아무리 애를 써도 각성이 되지 않아 일반인의 삶을 살고 있었다. 대학교 3학년 1학기 종강 후 알바를 마치고 집 가는 골목에서 각성했다. 제일 먼저 후각이 예민해졌고, 두통과 어지러움을 동시에 느껴 벽에 기대어 섰다가 주저앉았다. 그리고 이어진 작은 폭발. 마침 지나가던 가이드, 윤우의 도움을 받아 진정했지만 여태까지 공부하던 것을 포기하기 싫어서 발현을 알리고 싶지 않아 했다. 그래서 숨기고 학교를 마저 다니고 있다. 고등학생 때 교육을 받았어서 제어가 어렵진 않다. 능력 제어력이 굉장히 뛰어난 편.</span></p>
 		<p><span>　능력: 연소, 즉 산화작용. 물질과 산소를 화합하여 다량의 열을 내며 빛을 발하게 한다. 산소가 한정된 공간에서는 능력이 제한되어 있으나, 사방이 뚫린 공간이라면 별것 아닌 물질도 폭발시킬 수 있다. 공격형 A급 판정.</span></p>
 		<p><span>　부작용: 과호흡. 후각, 촉각, 미각, 청각 순으로 예민하다. 향수류를 싫어한다. 촉각은 공기의 흐름을 더 잘 느낄 수 있는 정도. 청각은 그저 일반인보다 조금 잘 듣는 정도고, 시각은 일반인과 다를 바 없다.</span></p>
 		<br>
+		<h4>Personal</h4>
 		<p><span>　S대 컴퓨터공학과 3학년, 5월 15일 생. 자수성가하여 고시원에서 자취 중이었다. 항상 돈에 쪼들려 과외와 아르바이트를 하며 혼자 살다가 각성 후 윤우의 집으로 아예 옮겨가 동거 중이다.</span></p>
 		<p><span>　가족들과 친하지 않다. 친구들도 많은 편은 아니다. 연애에 조차 관심이 없다. 혼자서도 잘 먹고 잘 노는 인간. 가정 폭력 피해자이기 때문에 결혼 제도와 가정을 꾸리는 것에 대해 회의적이다.</span></p>
 		<p><span>　선호가 뚜렷하지 않다. 이것도 괜찮아, 저것도 괜찮아. 한 발 물러서서 남은 것을 선택하는 타입.</span></p>
 		<p><span>　뭐든 딱딱 깔끔하게 떨어지는 말투.</span></p>
-		<p><span>　윤우와 같이 갔던 카페에서 과제를 하다가 이동되었다.</span></p>
 	</article>
 	<article id="pair" class="tc">
 		<p><a href="../yw/">남윤우</a></p>
@@ -118,5 +79,43 @@
 	<li rel="pair"><a href="#"><img src="../img/pair.png"></a></li>
 </menu>
 </div>
+	<script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="http://manos.malihu.gr/repository/custom-scrollbar/demo/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script>
+	var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+	$(document).ready(function(){
+		if(!isMobile) {
+			$(window).on("load",function(){
+				$("section").mCustomScrollbar({theme:"minimal"});
+			});
+		}
+		$('#passport').show();
+		$('#passport').delay(1000).animate({
+			top: '0',
+			opacity:1,
+		}, 1000);
+	})
+	$(function () {
+		$("menu li").click(function () {
+			$("menu li").animate({
+				opacity:0.5,
+			}, 500);
+			$(this).animate({
+				opacity:1,
+			}, 500);
+			var activeTab = $(this).attr("rel");
+			$("article").animate({
+				top:50,
+				opacity:0,
+			}, 500);
+			$("article").hide();
+			$("#" + activeTab).delay(500).show().animate({
+				top:0,
+				opacity:1,
+			}, 1000);
+		});
+	});
+	</script>
 </body>
 </html>
