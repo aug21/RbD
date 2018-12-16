@@ -78,6 +78,6 @@ menu li {
 	font-family: 'Roboto Condensed', 'Noto Sans KR', 'Spoqa Han Sans', 'malgun gothic', dotum;
 }
 #passport dl,
-#passport div { display:table-cell; margin:0; font-size:13px; }
+#passport div { display:table-cell; margin:0; font-size:13px; vertical-align:center; }
 #passport dt { font-size:11px; line-height:1; }
 #passport dd { margin:0 0 0.5em 0; }
